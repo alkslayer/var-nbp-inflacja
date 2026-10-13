@@ -14,4 +14,6 @@ if (Sys.getenv("QUARTO_PATH") == "") {
 }
 quarto::quarto_render("report/raport.qmd", output_format = "html")
 quarto::quarto_render("report/raport.qmd", output_format = "typst")
+dir.create("docs", showWarnings = FALSE)
+file.copy("report/raport.html", "docs/index.html", overwrite = TRUE)   # kopia dla GitHub Pages
 cat("\nGotowe: report/raport.html, report/raport.pdf\n")

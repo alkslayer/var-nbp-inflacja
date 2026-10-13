@@ -4,7 +4,7 @@ Analiza wektorowej autoregresji (VAR) na danych miesięcznych 2002–2026: stopa
 (kontrole: produkcja przemysłowa, ropa Brent). Funkcje reakcji na impuls z bootstrapem, dekompozycja wariancji,
 przyczynowość Grangera i 10 testów odporności.
 
-**Raport:** `report/raport.html` (interaktywny) i `report/raport.pdf`.
+**Raport online:** https://alkslayer.github.io/var-nbp-inflacja/ · pliki: `report/raport.html` i `report/raport.pdf`.
 
 ## Główny wynik
 Prosty VAR z identyfikacją Choleskiego **nie pokazuje, by niespodziewana podwyżka stopy NBP obniżała inflację**: poziom cen rośnie
@@ -31,6 +31,7 @@ data/processed/                       tabela miesięczna, dane do VAR, modele, b
 output/figures, output/tables         wykresy i tabele wynikowe
 report/raport.qmd                     raport Quarto -> HTML + PDF (Typst)
 run_all.R                             uruchamia wszystko od zera (~1 min)
+docs/index.html                       kopia raportu dla GitHub Pages
 ```
 
 ## Uruchomienie
@@ -43,3 +44,6 @@ Quarto CLI (np. wbudowane w RStudio; `run_all.R` ustawia `QUARTO_PATH`). PDF pow
 ## Uwaga metodologiczna
 Inflacja w modelu to zmiana **m/m** (z dummies miesięcznymi), nie Δ(r/r): różnica rocznej stopy ma mechaniczną
 autokorelację rzędu 12, która psuje diagnostykę reszt (opis w raporcie, rozdz. 3).
+
+## Licencja
+MIT, zob. `LICENSE`.
