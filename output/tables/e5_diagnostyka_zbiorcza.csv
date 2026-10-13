@@ -1,0 +1,6 @@
+test,H0,p_value,wynik,co_robic_gdy_nie_przechodzi
+Pierwiastki,stabilność (moduły < 1),NA,OK,"zmienić transformację/różnicowanie, sprawdzić liczbę opóźnień"
+Portmanteau(24),brak autokorelacji reszt,0.3706476550060245,OK,"zwiększyć p, dodać dummies/zmienną"
+Breusch-Godfrey(6),brak autokorelacji reszt,3.7976235023851057e-4,NIE,zwiększyć p (sprawdzić p = 6 w etapie 7)
+Jarque-Bera (wielowym.),normalność reszt,0,NIE,bootstrap reszt zamiast przedziałów normalnych; dummies na odstające
+ARCH-LM(5),homoskedastyczność,2.220446049250313e-16,NIE,okres bez 2020-2022; bootstrap; interpretować przedziały ostrożnie

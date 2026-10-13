@@ -1,0 +1,132 @@
+
+VAR Estimation Results:
+========================= 
+Endogenous variables: inflacja_mm, d_stopa, d_eurpln 
+Deterministic variables: const 
+Sample size: 292 
+Log Likelihood: -472.454 
+Roots of the characteristic polynomial:
+0.8667 0.559 0.559 0.436 0.436 0.372 0.372 0.2368 0.2368
+Call:
+vars::VAR(y = y, p = p, type = "const", season = 12L, exogen = exogen)
+
+
+Estimation results for equation inflacja_mm: 
+============================================ 
+inflacja_mm = inflacja_mm.l1 + d_stopa.l1 + d_eurpln.l1 + inflacja_mm.l2 + d_stopa.l2 + d_eurpln.l2 + inflacja_mm.l3 + d_stopa.l3 + d_eurpln.l3 + const + sd1 + sd2 + sd3 + sd4 + sd5 + sd6 + sd7 + sd8 + sd9 + sd10 + sd11 
+
+                Estimate Std. Error t value Pr(>|t|)    
+inflacja_mm.l1  0.338147   0.061031   5.541 7.14e-08 ***
+d_stopa.l1      0.085199   0.124044   0.687 0.492765    
+d_eurpln.l1     0.023548   0.011125   2.117 0.035190 *  
+inflacja_mm.l2  0.127365   0.064483   1.975 0.049263 *  
+d_stopa.l2      0.038118   0.135447   0.281 0.778600    
+d_eurpln.l2     0.004819   0.011813   0.408 0.683651    
+inflacja_mm.l3  0.122848   0.062085   1.979 0.048861 *  
+d_stopa.l3      0.242433   0.119153   2.035 0.042861 *  
+d_eurpln.l3     0.022934   0.011305   2.029 0.043461 *  
+const           0.112870   0.027489   4.106 5.33e-05 ***
+sd1            -0.302116   0.095031  -3.179 0.001649 ** 
+sd2            -0.045036   0.095360  -0.472 0.637111    
+sd3            -0.098509   0.093406  -1.055 0.292533    
+sd4            -0.349931   0.095824  -3.652 0.000312 ***
+sd5            -0.463822   0.091988  -5.042 8.43e-07 ***
+sd6            -0.535614   0.090743  -5.903 1.07e-08 ***
+sd7            -0.526771   0.090538  -5.818 1.67e-08 ***
+sd8            -0.105408   0.092806  -1.136 0.257047    
+sd9            -0.039434   0.096923  -0.407 0.684434    
+sd10           -0.321168   0.100161  -3.207 0.001505 ** 
+sd11           -0.409534   0.092564  -4.424 1.40e-05 ***
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 0.3127 on 271 degrees of freedom
+Multiple R-Squared: 0.5038,	Adjusted R-squared: 0.4672 
+F-statistic: 13.76 on 20 and 271 DF,  p-value: < 2.2e-16 
+
+
+Estimation results for equation d_stopa: 
+======================================== 
+d_stopa = inflacja_mm.l1 + d_stopa.l1 + d_eurpln.l1 + inflacja_mm.l2 + d_stopa.l2 + d_eurpln.l2 + inflacja_mm.l3 + d_stopa.l3 + d_eurpln.l3 + const + sd1 + sd2 + sd3 + sd4 + sd5 + sd6 + sd7 + sd8 + sd9 + sd10 + sd11 
+
+                 Estimate Std. Error t value Pr(>|t|)    
+inflacja_mm.l1  0.0928228  0.0301323   3.081  0.00228 ** 
+d_stopa.l1      0.4615701  0.0612434   7.537 7.25e-13 ***
+d_eurpln.l1    -0.0123322  0.0054924  -2.245  0.02555 *  
+inflacja_mm.l2  0.0265101  0.0318369   0.833  0.40576    
+d_stopa.l2      0.0722043  0.0668735   1.080  0.28123    
+d_eurpln.l2    -0.0028101  0.0058324  -0.482  0.63033    
+inflacja_mm.l3  0.0043682  0.0306528   0.143  0.88679    
+d_stopa.l3      0.0544185  0.0588290   0.925  0.35577    
+d_eurpln.l3    -0.0006682  0.0055814  -0.120  0.90480    
+const          -0.0381717  0.0135720  -2.813  0.00527 ** 
+sd1            -0.0372962  0.0469191  -0.795  0.42736    
+sd2            -0.1007371  0.0470818  -2.140  0.03328 *  
+sd3             0.0125464  0.0461171   0.272  0.78579    
+sd4            -0.0712743  0.0473106  -1.507  0.13310    
+sd5            -0.0205432  0.0454167  -0.452  0.65139    
+sd6             0.0218631  0.0448022   0.488  0.62595    
+sd7             0.0120888  0.0447008   0.270  0.78703    
+sd8            -0.0502421  0.0458207  -1.096  0.27384    
+sd9            -0.0196791  0.0478534  -0.411  0.68122    
+sd10           -0.0023314  0.0494521  -0.047  0.96243    
+sd11           -0.0434956  0.0457012  -0.952  0.34208    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 0.1544 on 271 degrees of freedom
+Multiple R-Squared: 0.5085,	Adjusted R-squared: 0.4722 
+F-statistic: 14.02 on 20 and 271 DF,  p-value: < 2.2e-16 
+
+
+Estimation results for equation d_eurpln: 
+========================================= 
+d_eurpln = inflacja_mm.l1 + d_stopa.l1 + d_eurpln.l1 + inflacja_mm.l2 + d_stopa.l2 + d_eurpln.l2 + inflacja_mm.l3 + d_stopa.l3 + d_eurpln.l3 + const + sd1 + sd2 + sd3 + sd4 + sd5 + sd6 + sd7 + sd8 + sd9 + sd10 + sd11 
+
+               Estimate Std. Error t value Pr(>|t|)    
+inflacja_mm.l1 -0.32658    0.33330  -0.980   0.3280    
+d_stopa.l1     -1.57773    0.67743  -2.329   0.0206 *  
+d_eurpln.l1     0.34647    0.06075   5.703 3.08e-08 ***
+inflacja_mm.l2 -0.12466    0.35216  -0.354   0.7236    
+d_stopa.l2      0.68123    0.73970   0.921   0.3579    
+d_eurpln.l2    -0.10149    0.06451  -1.573   0.1169    
+inflacja_mm.l3  0.04143    0.33906   0.122   0.9028    
+d_stopa.l3      0.74741    0.65072   1.149   0.2517    
+d_eurpln.l3     0.05718    0.06174   0.926   0.3551    
+const           0.14560    0.15012   0.970   0.3330    
+sd1            -0.02902    0.51898  -0.056   0.9555    
+sd2             0.29595    0.52078   0.568   0.5703    
+sd3            -0.72933    0.51011  -1.430   0.1539    
+sd4             0.59658    0.52331   1.140   0.2553    
+sd5             0.07754    0.50236   0.154   0.8775    
+sd6            -0.29817    0.49557  -0.602   0.5479    
+sd7            -0.53829    0.49445  -1.089   0.2773    
+sd8             0.44075    0.50683   0.870   0.3853    
+sd9            -0.30892    0.52932  -0.584   0.5600    
+sd10           -0.20475    0.54700  -0.374   0.7085    
+sd11           -0.09501    0.50551  -0.188   0.8511    
+---
+Signif. codes:  0 ‘***’ 0.001 ‘**’ 0.01 ‘*’ 0.05 ‘.’ 0.1 ‘ ’ 1
+
+
+Residual standard error: 1.708 on 271 degrees of freedom
+Multiple R-Squared: 0.1772,	Adjusted R-squared: 0.1164 
+F-statistic: 2.917 on 20 and 271 DF,  p-value: 4.778e-05 
+
+
+
+Covariance matrix of residuals:
+            inflacja_mm  d_stopa  d_eurpln
+inflacja_mm    0.097796  0.01118  0.005469
+d_stopa        0.011179  0.02384 -0.021847
+d_eurpln       0.005469 -0.02185  2.916737
+
+Correlation matrix of residuals:
+            inflacja_mm  d_stopa d_eurpln
+inflacja_mm     1.00000  0.23153  0.01024
+d_stopa         0.23153  1.00000 -0.08285
+d_eurpln        0.01024 -0.08285  1.00000
+
+

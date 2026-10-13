@@ -1,0 +1,5 @@
+szereg,specyfikacja,adf_tau,adf_kryt5,adf_stacjonarny,kpss_stat,kpss_p,kpss_stacjonarny,lagi_adf
+inflacja_mm (surowa),drift,-2.33,-2.87,FALSE,0.691,0.014,FALSE,12
+inflacja_mm (bez sezonowości),drift,-3.18,-2.87,TRUE,0.787,0.01,FALSE,5
+"inflacja_mm bez sez., do 2019",drift,-6.86,-2.88,TRUE,0.434,0.062,TRUE,1
+"inflacja_mm bez sez., od 2010",drift,-2.27,-2.88,FALSE,1.044,0.01,FALSE,5

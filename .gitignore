@@ -1,0 +1,8 @@
+.Rproj.user/
+.Rhistory
+.RData
+*.RData
+.Ruserdata
+.DS_Store
+report/.quarto/
+CLAUDE.md

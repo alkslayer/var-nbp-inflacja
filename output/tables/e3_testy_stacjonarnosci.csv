@@ -1,0 +1,13 @@
+szereg,specyfikacja,adf_tau,adf_kryt5,adf_stacjonarny,kpss_stat,kpss_p,kpss_stacjonarny,lagi_adf
+stopa,drift,-2.58,-2.87,FALSE,1.368,0.01,FALSE,3
+stopa,trend,-2.55,-3.42,FALSE,0.684,0.01,FALSE,3
+d_stopa,drift,-6.19,-2.87,TRUE,0.305,0.1,TRUE,1
+inflacja,drift,-1.86,-2.87,FALSE,0.911,0.01,FALSE,12
+inflacja,trend,-1.95,-3.42,FALSE,0.321,0.01,FALSE,12
+d_inflacja,drift,-6.94,-2.87,TRUE,0.061,0.1,TRUE,11
+leurpln,drift,-2.94,-2.87,TRUE,1.658,0.01,FALSE,5
+leurpln,trend,-3.35,-3.42,FALSE,0.182,0.023,FALSE,5
+d_leurpln,drift,-7.55,-2.87,TRUE,0.056,0.1,TRUE,4
+lprodukcja,drift,-1.68,-2.87,FALSE,4.855,0.01,FALSE,2
+lprodukcja,trend,-3.65,-3.42,TRUE,0.348,0.01,FALSE,2
+d_lprodukcja,drift,-14.62,-2.87,TRUE,0.121,0.1,TRUE,1
